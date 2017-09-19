@@ -1,0 +1,54 @@
+*, *::after {
+  box-sizing: border-box; /*-- sets box math for all elements --*/
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    flex-direction: column;
+    flex-direction: column;  /*-- arranges flex item children in a column --*/
+    padding: 2rem .5rem;  /*-- bigger padding top and bottom, a little left and right --*/
+}
+
+@media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
+  .cards-item {width: 50%;} /*-- sets card width to half of the page --*/
+}
+
+@media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
+  .cards-item {width: 33.33333%;} /*-- sets card width to one-third of the page --*/
+}
+
+@media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
+  .cards-item {width: 25%;} /*-- sets card width to one-quarter of the page --*/
+}
+
+.flex {
+  border: 1px solid #dadada;
+}
+
+.flex-image{
+  background-size: cover;  /*-- sets images size to cover --*/
+  background-position: center center;  /*-- certers verically and horizontally --*/
+  padding-bottom: 60%;  /*-- for 16:9 aspect ratio --*/
+  filter: contrast(70%); /*-- adds 70% contrast filter to image --*/
+  transition: filter 0.3s ease-in;  /*-- sets filter transition speed and easing --*/
+}
+
+.flex:hover .flex-image {
+    filter: contrast(100%);  /*-- transitions to 100% filter on hover --*/
+}
+
+.flex-content {
+  display: flex;  /*-- sets card-content wrapper to flex --*/
+  flex: 1 1 auto;  /*-- sets flex-grow, flex-shrink, flex-basis values  --*/
+  flex-direction: column; /*-- arranges children in a column  --*/
+  padding: .75rem;  /*-- adds good padding inside card content area --*/
+}
