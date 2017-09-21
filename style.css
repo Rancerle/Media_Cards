@@ -6,12 +6,16 @@
   display: flex; /* or inline-flex */
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-item{
   display: flex;
   flex-direction: column;
-  padding: 2rem .5rem;
+  align-content: center;
+  margin: 5px;
   border: 1px solid #dadada;
 }
 
@@ -30,6 +34,7 @@
 
 .item-button{
   align-self: center;
+  margin: 5px;
 }
 
 .item-image { /*-- general styles for card images --*/
@@ -40,6 +45,10 @@
 }
 .flex-item:hover .item-image {
     filter: contrast(100%);  /*-- transitions to 100% filter on hover --*/
+}
+
+.flex-item:hover{
+  border: 2px solid #dfdfdf;
 }
 
 img{
