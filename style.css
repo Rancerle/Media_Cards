@@ -2,53 +2,68 @@
   box-sizing: border-box; /*-- sets box math for all elements --*/
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-between;
+img {
+  width: 100%;  /*-- makes all images responsive --*/
 }
 
-.flex-item {
-    background-color: cornflowerblue;
-    flex-direction: column;
-    flex-direction: column;  /*-- arranges flex item children in a column --*/
-    padding: 2rem .5rem;  /*-- bigger padding top and bottom, a little left and right --*/
+.flex-container{
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-between;
+}
+
+.flex{
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 200px;
+  order: 5;
+  align-self: flex-end;
+}
+
+.flex-item{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem .5rem;
+}
+
+.item-title{
+  font-family: 'Dancing Script';
+  align-self: center;
+  font-size: 25px;
+}
+
+.item-text{
+  font-family: 'Libre Baskerville';
+  align-self: center;
+  font-size: 10px;
+}
+
+.item-button{
+  align-self: center;
+}
+
+.item-image { /*-- general styles for card images --*/
+  background-size: cover;  /*-- sets images size to cover --*/
+  background-position: center center;  /*-- certers verically and horizontally --*/
+  filter: contrast(70%); /*-- adds 70% contrast filter to image --*/
+  transition: filter 0.3s ease-in;  /*-- sets filter transition speed and easing --*/
+}
+.flex-item:hover .item-image {
+    filter: contrast(100%);  /*-- transitions to 100% filter on hover --*/
 }
 
 @media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
   .cards-item {width: 50%;} /*-- sets card width to half of the page --*/
 }
-
 @media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
   .cards-item {width: 33.33333%;} /*-- sets card width to one-third of the page --*/
 }
-
 @media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
   .cards-item {width: 25%;} /*-- sets card width to one-quarter of the page --*/
 }
-
-.flex {
+.flex-item {
   border: 1px solid #dadada;
-}
-
-.flex-image{
-  background-size: cover;  /*-- sets images size to cover --*/
-  background-position: center center;  /*-- certers verically and horizontally --*/
-  padding-bottom: 60%;  /*-- for 16:9 aspect ratio --*/
-  filter: contrast(70%); /*-- adds 70% contrast filter to image --*/
-  transition: filter 0.3s ease-in;  /*-- sets filter transition speed and easing --*/
-}
-
-.flex:hover .flex-image {
-    filter: contrast(100%);  /*-- transitions to 100% filter on hover --*/
-}
-
-.flex-content {
-  display: flex;  /*-- sets card-content wrapper to flex --*/
-  flex: 1 1 auto;  /*-- sets flex-grow, flex-shrink, flex-basis values  --*/
-  flex-direction: column; /*-- arranges children in a column  --*/
-  padding: .75rem;  /*-- adds good padding inside card content area --*/
 }
