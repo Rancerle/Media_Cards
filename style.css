@@ -65,3 +65,12 @@ img{
 @media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
   .flex-item {width: 25%;} /*-- sets card width to one-quarter of the page --*/
 }
+
+.bottom{
+  display:inline-block;
+  color: #5EB4FF;
+}
+
+.social{
+  margin: 10px;
+}
