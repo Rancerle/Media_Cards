@@ -8,6 +8,7 @@ main{
 
 .top{
   background-color: #45A8FF;
+  width: 90%
   display: inline-block;
   padding: 5px;
   border: 1px solid black;
@@ -25,6 +26,7 @@ ul li {
 }
 
 #banner{
+  display: inline-block;
   justify-content: center;
   font-size: 40px;
   font-family: 'Lobster', cursive;
@@ -104,6 +106,7 @@ img{
 
 .bottom{
   display:inline-block;
+  width: 90%;
   padding: 5px;
   background-color: #45A8FF;
   border: 1px solid black;
@@ -111,8 +114,10 @@ img{
 
 .social{
   margin-left: 10px;
+  display: inline-block;
 }
 
 footer{
   margin-right: 10px;
+  display: inline-block;
 }
