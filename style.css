@@ -2,13 +2,14 @@
   box-sizing: border-box; /*-- sets box math for all elements --*/
 }
 
-main{
-  color: FBFFC7;
+html{
+  background-color: #FBFFC9;
 }
 
 .top{
-  background-color: #45A8FF;
-  width: 90%
+  background-color: #D3E0AD;
+  width: 100%;
+  text-align: center;
   display: inline-block;
   padding: 5px;
   border: 1px solid black;
@@ -25,14 +26,14 @@ ul li {
   padding-left: 1em;
 }
 
-#banner{
+.top #banner{
   display: inline-block;
-  justify-content: center;
   font-size: 40px;
   font-family: 'Lobster', cursive;
 }
 
-.menu {
+.top .menu {
+  float: left;
   margin-left: 1em;
 }
 .social-links {
@@ -54,7 +55,8 @@ ul li {
   flex-direction: column;
   align-content: center;
   margin: 5px;
-  border: 1px solid #dadada;
+  border: 1px solid #D4CD0B;
+  background-color: white;
 }
 
 .item-title{
@@ -86,11 +88,11 @@ ul li {
 }
 
 .flex-item:hover{
-  border: 2px solid #dfdfdf;
+  border: 2px solid #D4CD0B;
 }
 
 img{
-  border: 2px solid #dadada;
+  border: 2px solid #D4CD0B;
   width: 100%;
 }
 
@@ -106,18 +108,36 @@ img{
 
 .bottom{
   display:inline-block;
-  width: 90%;
+  text-align: center;
+  width: 100%;
   padding: 5px;
-  background-color: #45A8FF;
+  background-color: #D3E0AD;
   border: 1px solid black;
+  align-content: center;
 }
 
 .social{
-  margin-left: 10px;
   display: inline-block;
+  float: left;
+  margin-left: 1em;
 }
 
 footer{
-  margin-right: 10px;
   display: inline-block;
+}
+
+i{
+  color: black;
+}
+
+i:hover{
+  color: #191970;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: #191970;
 }
