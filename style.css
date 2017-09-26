@@ -8,8 +8,8 @@ html{
 
 .top{
   background-color: #D3E0AD;
-  width: 100%;
   text-align: center;
+  width: 100%;
   display: inline-block;
   padding: 5px;
   border: 1px solid black;
@@ -92,7 +92,6 @@ ul li {
 }
 
 img{
-  border: 2px solid #D4CD0B;
   width: 100%;
 }
 
